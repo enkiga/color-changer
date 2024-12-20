@@ -1,0 +1,91 @@
+:root {
+  --initial-color: #f0f0f0;
+  --initial-button-color: #f0f0f0;
+  --initial-text-color: #000000;
+  --initial-border-color: #000000;
+}
+
+body {
+  background-color: var(--initial-color);
+  color: var(--initial-text-color);
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--initial-color);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container .box .color-box{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: var(--initial-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container .box p {
+    margin: 0;
+    padding: 10px;
+    text-align: end;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.container .box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: var(--initial-button-color);
+    color: var(--initial-text-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container .box button:hover {
+    background-color: var(--initial-border-color);
+    color: var(--initial-color);
+    transition: all 0.3s ease;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--initial-color);
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    padding: 10px;
+}
